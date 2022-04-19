@@ -1,0 +1,155 @@
+/***********************************/
+/* GENERAL */
+/***********************************/
+
+:root {
+  --colour-text: #333;
+  --colour-background: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* Percentage of user's font-size setting */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open-Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--colour-text);
+}
+
+header {
+  font-size: 1.8em;
+  font-weight: 400;
+  color: inherit;
+  text-align: center;
+}
+
+/***********************************/
+/* NAVIGATION */
+/***********************************/
+#navbar {
+  position: fixed;
+  min-width: 29rem;
+  width: 30rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-right: solid #adadad;
+}
+
+.heading-primary {
+  margin: 1rem 0;
+}
+
+.nav-links {
+  list-style: none;
+  height: 88%;
+  overflow-y: scroll;
+}
+
+.link {
+  position: relative;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  transform: translateY(1px);
+  background-color: #fafafa;
+}
+
+/***********************************/
+/* MAIN DOCUMENT */
+/***********************************/
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: absolute;
+  /* top: 0; */
+  left: 31rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+  margin-bottom: 10rem;
+}
+
+.heading {
+  text-align: left;
+}
+
+section article {
+  margin: 1.5rem;
+  font-size: 0.96em;
+}
+
+section p {
+  margin: 1.5rem;
+}
+
+code {
+  display: block;
+  /* position: relative; */
+  background-color: var(--colour-background);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.4rem;
+  line-height: 2;
+  text-align: left;
+  white-space: pre-line;
+  /* word-break: normal; */
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+section ul {
+  margin: 1em 1em;
+  padding: 0 4rem;
+}
+
+section li {
+  margin: 1.5rem 0 0 2rem;
+}
+
+/***********************************/
+/* MEDIA QUERIES */
+/***********************************/
+
+@media only screen and (max-width: 60rem) {
+  #navbar {
+    width: 100%;
+    height: 27rem;
+    border-right: none;
+    border-bottom: solid #adadad;
+    background-color: #fafafa;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .nav-links {
+    overflow: auto;
+  }
+
+  #main-doc {
+    position: relative;
+    top: 27rem;
+    left: 0;
+  }
+}
