@@ -1,6 +1,6 @@
-/***********************************/
+/**************/
 /* GENERAL */
-/***********************************/
+/**************/
 
 :root {
   --colour-text: #333;
@@ -16,6 +16,7 @@
 html {
   font-size: 62.5%; /* Percentage of user's font-size setting */
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,9 +34,9 @@ header {
   text-align: center;
 }
 
-/***********************************/
+/**************/
 /* NAVIGATION */
-/***********************************/
+/**************/
 #navbar {
   position: fixed;
   min-width: 29rem;
@@ -76,9 +77,9 @@ header {
   background-color: #fafafa;
 }
 
-/***********************************/
+/**************/
 /* MAIN DOCUMENT */
-/***********************************/
+/**************/
 #main-doc {
   display: flex;
   flex-direction: column;
@@ -128,9 +129,9 @@ section li {
   margin: 1.5rem 0 0 2rem;
 }
 
-/***********************************/
+/********************/
 /* MEDIA QUERIES */
-/***********************************/
+/********************/
 
 @media only screen and (max-width: 60rem) {
   #navbar {
